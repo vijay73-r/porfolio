@@ -308,7 +308,7 @@ p {
 /* Skill Section */
 .skills_section {
 	width: 100%;
-	height: 100vh;
+	height: auto;
 	padding: 0px 13%;
 	background-color: white(0, 0, 0, 0.082);
 	display: flex;
@@ -335,8 +335,8 @@ p {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	grid-row-gap: 30px;
-	grid-column-gap: 50px;
+	grid-row-gap: 20px;
+	grid-column-gap: 0;
 }
 
 .skills_main .skill_bar .info {
@@ -789,8 +789,14 @@ p {
 
 	/* skills Section */
 	.skills_main {
+		/* Adjust grid-template-columns to show two skills per row on tablets */
 		grid-template-columns: repeat(2, 1fr);
-	}
+		/* Restore the original grid-row-gap and grid-column-gap */
+		grid-row-gap: 30px;
+		grid-column-gap: 50px;
+		
+	  }
+	
 
 
 	/* End skills Section */
